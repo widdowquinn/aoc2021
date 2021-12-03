@@ -14828,15 +14828,15 @@ a.anchor-link {
     <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ncols</span><span class="p">):</span>  <span class="c1"># iterate over columns in the array</span>
         <span class="n">col</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span> <span class="n">idx</span><span class="p">]</span>
 
-        <span class="c1"># find most common value in current column</span>
+        <span class="c1"># find least common value in current column</span>
         <span class="k">if</span> <span class="nb">sum</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">:</span>
-            <span class="n">mcv</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">lcv</span> <span class="o">=</span> <span class="mi">1</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">mcv</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">lcv</span> <span class="o">=</span> <span class="mi">0</span>
 
         <span class="c1"># Exclude from the array all rows where the current</span>
-        <span class="c1"># column contains the least common value</span>
-        <span class="n">newarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span> <span class="n">idx</span><span class="p">]</span> <span class="o">!=</span> <span class="n">mcv</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="c1"># column contains the most common value</span>
+        <span class="n">newarray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span> <span class="n">idx</span><span class="p">]</span> <span class="o">!=</span> <span class="n">lcv</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
         
         <span class="c1"># Either update the array or, if there would not be</span>
         <span class="c1"># any rows, break out of the loop</span>
