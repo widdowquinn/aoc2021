@@ -12,3 +12,4 @@ This repository contains (attempted) solutions to Advent of Code 2021
 - [day 02](./day02.html)
 - [day 03](./day03.html)
 - [day 04](./day04.html)
+- [day 05](./day05.html)
