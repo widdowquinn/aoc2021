@@ -18,3 +18,5 @@ This repository contains (attempted) solutions to Advent of Code 2021
 - [day 08](./day08.html)
 - [day 09](./day09.html)
 - [day 10](./day10.html)
+- [day 11](./day11.html)
+
