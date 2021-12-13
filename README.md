@@ -20,3 +20,4 @@ This repository contains (attempted) solutions to Advent of Code 2021
 - [day 10](./day10.html)
 - [day 11](./day11.html)
 - [day 12](./day12.html)
+- [day 13](./day13.html)
