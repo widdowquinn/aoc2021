@@ -25,3 +25,5 @@ This repository contains (attempted) solutions to Advent of Code 2021
 - [day 15](./day15.html)
 - [day 16](./day16.html)
 - [day 17](./day17.html)
+- [day 18](./day18.html)
+- [day 19](./day19.html)
